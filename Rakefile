@@ -29,6 +29,6 @@ end
 
 
 desc 'drop into the Pry console'
-task :console => db:environment do
+task :console => :environment do
   Pry.start
 end
